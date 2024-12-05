@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+table {
+  @apply bg-gray-800 text-gray-100 border-gray-700 w-full border-collapse;
+}
+
+th {
+  @apply bg-gray-700 text-gray-300 px-4 py-2 text-center;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-800;
+}
+
+tr:nth-child(odd) {
+  @apply bg-gray-700;
+}
+
+td {
+  @apply px-4 py-2 border border-gray-600 text-center;
+}
+
+.date, .verdict {
+  width: 8rem; /* Equivalent to w-32 in Tailwind CSS */
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  font: 14px sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+}
